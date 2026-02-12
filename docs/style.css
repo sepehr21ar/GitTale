@@ -1,0 +1,77 @@
+body {
+    font-family: 'Tahoma', sans-serif;
+    line-height: 1.8;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #e44c3e;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.chapter {
+    background: #f1f8ff;
+    padding: 15px 25px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-right: 5px solid #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chapter h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.chapter a {
+    background: #2c3e50;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.exercises {
+    text-align: center;
+    margin: 50px 0;
+    padding: 30px;
+    background: #f8f0f0;
+    border-radius: 10px;
+}
+
+.btn {
+    background: #e44c3e;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #999;
+}
