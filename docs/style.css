@@ -1,0 +1,160 @@
+/* فونت فارسی */
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@latest/dist/font-face.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Vazir', 'Tahoma', sans-serif;
+    line-height: 1.8;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+h1 {
+    color: #e44c3e;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed #e44c3e;
+}
+
+.chapters {
+    margin-bottom: 50px;
+}
+
+.chapter {
+    background: #f8f9fa;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border-right: 8px solid #e44c3e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.chapter:hover {
+    transform: translateX(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.chapter h2 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.5em;
+}
+
+.chapter p {
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+
+.btn-study {
+    background: #2c3e50;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-study:hover {
+    background: #e44c3e;
+    transform: scale(1.05);
+}
+
+.exercises {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 35px;
+    border-radius: 15px;
+    color: white;
+    margin: 40px 0;
+}
+
+.exercises h2 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.exercise-list {
+    margin-top: 25px;
+}
+
+.exercise-item {
+    background: rgba(255,255,255,0.2);
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.btn-exercise {
+    background: white;
+    color: #764ba2;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-exercise:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #95a5a6;
+}
+
+.small {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .chapter {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
