@@ -18,10 +18,7 @@
 هر فصل تمرین عملی داره!  
 [./exercises/](./exercises/)
 
-## 🌐 وبسایت
 
-آموزش‌ها به صورت آنلاین:  
-<!-- **https://yourusername.github.io/git-persian-tutorial** -->
 
 ## 🤝 مشارکت
 
