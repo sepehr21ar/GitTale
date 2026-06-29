@@ -1,119 +1,127 @@
-# 🎮 تمرین ۰۲: دستورات پایه (add, commit, status, log)
-
-**بر اساس فصل ۲ که قبلاً نوشتیم، حالا تمرین عملیش رو می‌سازیم:**
-
-**📁 مسیر فایل:**
-
-```bash
-GitTale/exercises/02-basic-commands/README.md
-```
 # 🎮 تمرین ۲: دستورات پایه (add, commit, status, log)
 
 <div dir="rtl">
 
 ## 📌 هدف تمرین
-یادگیری عملی دستورات پایه گیت و کار با Staging Area
+
+در این تمرین یاد می‌گیری چطور فایل بسازی، وضعیت پروژه را ببینی، فایل‌ها را وارد Staging Area کنی، کامیت بسازی و تاریخچه را بررسی کنی.
 
 ## ⏱ زمان پیشنهادی
+
 ۱۵ دقیقه
 
----
+## پیش‌نیاز
 
-## 📝 **مراحل تمرین**
+فصل ۱ و فصل ۲ را خوانده باشی و گیت روی سیستم نصب باشد.
 
-### **۱️⃣ یک پروژه جدید بساز**
+## مراحل تمرین
+
+### ۱. یک پروژه جدید بساز
 
 </div>
 
 ```bash
-# یه پوشه جدید برای تمرین بساز
-cd ~/Desktop
-mkdir my-git-practice
-cd my-git-practice
-
-# تبدیل به مخزن گیت
+mkdir basic-commands-practice
+cd basic-commands-practice
 git init
 ```
 
 <div dir="rtl">
-**نصب nano**
 
-یک برنامه ی ویرایش و ساخت متن
+### ۲. وضعیت اولیه را ببین
 
-```bash
-لینوکس:
-bash
-sudo apt install nano
-مک:
-bash
-brew install nano
-ویندوز (Git Bash):
-bash
-# معمولاً همراه Git نصب میشه
-nano --version
-
-```
 </div>
 
 ```bash
-cd any where
-
-mkdir -p basic-commands
-
-cd basic-commands
-
-nano sample.txt
-```
-
-
-حالا توی nano این رو بنویس:
-
-
-```c
-یادگیری عملی دستورات پایه گیت
-```
-
-<div dir="rtl">
-
-**۳️⃣ وضعیت رو ببین**
-</div>
-
-```bash
-
 git status
 ```
 
 <div dir="rtl">
 
-**۴️⃣ فایل‌ها رو add کن**
+### ۳. دو فایل ساده بساز
 
 </div>
 
+```bash
+echo "# پروژه تمرینی من" > README.md
+echo "body { font-family: sans-serif; }" > style.css
+```
+
+<div dir="rtl">
+
+### ۴. دوباره وضعیت را بررسی کن
+
+</div>
 
 ```bash
-git add index.html
 git status
+```
+
+<div dir="rtl">
+
+باید ببینی فایل‌ها هنوز track نشده‌اند.
+
+### ۵. فقط یک فایل را add کن
+
+</div>
+
+```bash
+git add README.md
+git status
+```
+
+<div dir="rtl">
+
+حالا `README.md` آماده کامیت است، اما `style.css` هنوز آماده نیست.
+
+### ۶. فایل دوم را هم add کن
+
+</div>
+
+```bash
 git add style.css
 git status
 ```
 
 <div dir="rtl">
 
-**۵️⃣ کامیت کن**
+### ۷. اولین کامیت را بساز
 
 </div>
 
 ```bash
-git commit -m "اولین کامیت: فایل‌های اصلی"
+git commit -m "ایجاد فایل‌های اولیه پروژه"
 ```
+
 <div dir="rtl">
 
-**۶️⃣ تاریخچه رو ببین**
-
+### ۸. تاریخچه را ببین
 
 </div>
 
+```bash
+git log --oneline
+```
+
+<div dir="rtl">
+
+## چالش اضافه
+
+یک فایل جدید به نام `notes.txt` بساز، داخلش یک جمله بنویس، سپس آن را add و commit کن.
+
+</div>
 
 ```bash
-git log 
+echo "امروز دستورات پایه گیت را تمرین کردم." > notes.txt
+git add notes.txt
+git commit -m "اضافه کردن یادداشت تمرین"
+git log --oneline
 ```
+
+<div dir="rtl">
+
+## نتیجه مورد انتظار
+
+در پایان باید حداقل دو commit در خروجی `git log --oneline` ببینی.
+
+</div>

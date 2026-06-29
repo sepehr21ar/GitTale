@@ -76,7 +76,7 @@ git add index.html
 git add .
 
 # یه پوشه رو اضافه کن
-/git add src
+git add src
 ```
 
 <div style="text-align: right; direction: rtl;">
@@ -189,3 +189,37 @@ a1b2c3d ایجاد صفحه اصلی وبسایت
 f4e5d6a اضافه کردن استایل به navbar
 g7h8i9j رفع باگ در فرم تماس
 ```
+
+<div style="text-align: right; direction: rtl;">
+
+## اشتباه‌های رایج
+
+### کامیت بدون add
+
+اگر فقط فایل را تغییر بدهی و مستقیم commit بزنی، ممکن است گیت بگوید چیزی برای کامیت وجود ندارد. اول وضعیت را ببین و فایل را add کن:
+
+</div>
+
+```bash
+git status
+git add .
+git commit -m "پیام کامیت"
+```
+
+<div style="text-align: right; direction: rtl;">
+
+### پیام کامیت نامفهوم
+
+پیام‌هایی مثل `update` یا `fix` بعداً کمکی نمی‌کنند. بهتر است پیام کامیت بگوید دقیقاً چه چیزی تغییر کرده است.
+
+## تمرین پیشنهادی
+
+بعد از این فصل، تمرین دستورات پایه را انجام بده:
+
+[تمرین ۲: دستورات پایه](../../exercises/02-base_commands/README.md)
+
+## جمع‌بندی
+
+چرخه اصلی کار با گیت این است: تغییر می‌دهی، با `git status` بررسی می‌کنی، با `git add` آماده می‌کنی، با `git commit` ذخیره می‌کنی و با `git log` تاریخچه را می‌بینی.
+
+</div>

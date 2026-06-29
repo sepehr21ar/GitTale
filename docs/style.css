@@ -62,7 +62,14 @@ h1 {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-.chapter h2 {
+.section-title {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.chapter h2,
+.chapter h3 {
     margin: 0;
     color: #2c3e50;
     font-size: 1.5em;
@@ -114,6 +121,12 @@ h1 {
     justify-content: space-between;
     align-items: center;
     backdrop-filter: blur(10px);
+    margin-bottom: 12px;
+    gap: 15px;
+}
+
+.exercise-item:last-child {
+    margin-bottom: 0;
 }
 
 .btn-exercise {
